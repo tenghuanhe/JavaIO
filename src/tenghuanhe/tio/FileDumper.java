@@ -1,3 +1,5 @@
+package tenghuanhe.tio;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -12,7 +14,7 @@ public class FileDumper {
 
     public static void main(String args[]) {
         if (args.length < 1) {
-            System.err.println("Usage: java FileDumper [-adh] file1 file2 ...");
+            System.err.println("Usage: java tenghuanhe.tio.FileDumper [-adh] file1 file2 ...");
             return;
         }
 

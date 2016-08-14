@@ -1,3 +1,5 @@
+package tenghuanhe.tio;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -9,7 +11,7 @@ import java.net.URLConnection;
 public class WebCat {
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.err.println("Usage: java WebCat url1 url2 ...");
+            System.err.println("Usage: java tenghuanhe.tio.WebCat url1 url2 ...");
             return;
         }
 
@@ -28,7 +30,7 @@ public class WebCat {
                 StreamCopier.copy(in, System.out);
                 in.close();
             } catch (IOException e) {
-                System.err.println(e);
+                e.printStackTrace();
             }
 
         }

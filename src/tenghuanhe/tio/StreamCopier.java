@@ -1,3 +1,5 @@
+package tenghuanhe.tio;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -10,7 +12,7 @@ public class StreamCopier {
         try {
             copy(System.in, System.out);
         } catch (IOException e) {
-            System.err.println(e);
+            e.printStackTrace();
         }
     }
 

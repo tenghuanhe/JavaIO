@@ -1,3 +1,5 @@
+package tenghuanhe.tio;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -9,7 +11,7 @@ import java.nio.charset.MalformedInputException;
 public class URLTyper {
     public static void main(String[] args) {
         if (args.length == 0) {
-            System.err.println("Usage: java URLTyper url1 url2 ...");
+            System.err.println("Usage: java tenghuanhe.tio.URLTyper url1 url2 ...");
             return;
         }
 
